@@ -80,7 +80,7 @@ test:
         retry_interval: 0
 
 # set these environment variables on your prod server
-production:
+production: 
   sessions:
     default:
       uri: <%= ENV['MONGOHQ_URL'] %>
