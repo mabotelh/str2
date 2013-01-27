@@ -1,0 +1,5 @@
+#search.pull-right
+  = form_tag jobs_path, method: :get, class:"well form-search" do   
+    = text_field_tag :query, params[:query], class:"input-medium search-query"
+    %button.btn{type: "submit"}
+      Search

@@ -1,0 +1,16 @@
+%h3 Jobs
+= render 'layouts/search'
+%table.table.table-bordered.table-striped.table-hover
+  %thead
+    %tr
+      %th
+        Title
+      %th
+        Last Updated
+  %tbody
+    - @jobs.each do |job|
+      %tr
+        %td
+          = link_to job.title, job
+        %td
+          = job.updated_at

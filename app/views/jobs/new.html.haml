@@ -1,0 +1,13 @@
+%h1 New Job
+= form_for @job, html: {class: "form-horizontal well"} do |f|
+  %fieldset
+    .control-group
+      = f.label :title, class: "control-label"
+      .controls
+        = f.text_field :title, class: "input-xxlarge"
+    .control-group
+      = f.label :description, class: "control-label"
+      .controls
+        =f.text_area :description, class: "input-xxlarge"
+
+  %div= f.submit 
