@@ -79,6 +79,8 @@ Str2::Application.configure do
     password: ENV["GMAIL_PASSWORD"]
   }
 
-
+  Tire.configure do
+    url ENV['SEARCHBOX_URL']
+  end
 
 end
