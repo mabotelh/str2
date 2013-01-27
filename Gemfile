@@ -18,6 +18,7 @@ gem "bootswatch-rails"
 gem "devise", ">= 2.2.2"
 gem "figaro", ">= 0.5.3"
 gem "tire"
+gem "inherited_resources"
 
 gem "haml-rails", ">= 0.3.5", :group => :development
 gem "hpricot", ">= 0.8.6", :group => :development
