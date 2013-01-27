@@ -81,18 +81,6 @@ test:
 
 # set these environment variables on your prod server
 production:
-  # <<: *defaults
-  database: str_prod
-
-  # other settings for production
-  # host: <%= ENV['MONGOID_HOST'] %>
-  # port: <%= ENV['MONGOID_PORT'] %>
-  # username: <%= ENV['MONGOID_USERNAME'] %>
-  # password: <%= ENV['MONGOID_PASSWORD'] %>
-  # database: <%= ENV['MONGOID_DATABASE'] %>
-
-  # heroku
-  uri: <%= ENV['MONGOHQ_URL'] %>
-
-  # bushido (mongohq_url will also work)
-  # uri: <%= ENV['MONGODB_URL'] %>
+  sessions:
+    default:
+      uri: <%= ENV['MONGOHQ_URL'] %>
