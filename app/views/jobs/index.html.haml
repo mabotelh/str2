@@ -1,4 +1,9 @@
-%h3 Jobs
+%h3 
+  Jobs
+  - if user_signed_in?
+    = form_tag new_job_path, method: :get do   
+      %button.btn Add Job
+
 = render 'layouts/search'
 %table.table.table-bordered.table-striped.table-hover
   %thead
